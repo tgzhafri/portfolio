@@ -6,7 +6,6 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
-  distDir: "build", // Ensure this matches your build output directory
 };
 
 export default withContentlayer(nextConfig);
