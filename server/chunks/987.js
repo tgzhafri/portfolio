@@ -1,0 +1,1 @@
+"use strict";exports.id=987,exports.ids=[987],exports.modules={5354:()=>{},2300:(t,e,s)=>{let{createProxy:o}=s(5153);t.exports=o("/Users/tgzhafri/Documents/tz/project/portfolio/node_modules/next/dist/client/link.js")},4353:(t,e,s)=>{t.exports=s(2300)}};
