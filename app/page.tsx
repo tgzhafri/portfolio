@@ -36,7 +36,10 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 mx-6">
-					Hi I'm Zhafri, a software engineer who thinks debugging is a lot like savouring a fine coffee - an acquired taste!
+					Hi I'm Zhafri,
+				</h2>
+				<h2 className="text-sm text-zinc-500 mx-6">
+					a software engineer who thinks debugging is a lot like savouring a fine coffee - an acquired taste.
 				</h2>
 				<h2 className="text-sm text-zinc-500 mx-6">
 					When I'm not glued to my screen, you'll find me kicking balls, conquering trails, and smashing birdies on the badminton court!

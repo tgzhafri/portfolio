@@ -32,9 +32,10 @@ export default function Dashboard() {
 
     const handleLinkHover = (label: string) => {
         setHoveredLabel(label);
-        label ? setHoveredStatus('bg-zinc-600/30 transition duration-1000 ease-in-out') : setHoveredStatus('');
 
-        label ? setMovingStatus('group-hover:animate-fade-left') : setMovingStatus('');
+        label ? setHoveredStatus('bg-zinc-600/20 transition duration-1000 ease-in-out') : setHoveredStatus('');
+
+        label ? setMovingStatus('group-hover:animate-fade-left transition ease-in-out') : setMovingStatus('');
 
         setTimeout(() => {
             setMovingStatus('animate-none');
@@ -59,7 +60,7 @@ export default function Dashboard() {
                             href={content.href}
                             onMouseEnter={() => handleLinkHover(content.label)}
                             onMouseLeave={() => handleLinkHover('')}
-                            className={`col-span-12 rounded-xl bg-zinc-800 p-32 sm:${content.width} text-white backdrop-blur-md animate-fade-in ${isHovered}`}
+                            className={`group col-span-12 rounded-xl bg-zinc-800 p-32 ${content.width} text-white backdrop-blur-md animate-fade-in ${isHovered} hover:bg-zinc-600/40`}
                         >
                             <h1 className={`absolute bottom-0 left-0 p-7 text-lg ${isMoving}`}>
                                 {content.label}
